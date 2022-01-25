@@ -10,7 +10,6 @@ def index(request):
     appid = 'a644163645c77ff5a486b4bdaeb815a6'
     url = 'https://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=' + appid
 
-
     if(request.method == 'POST'):
         form = CityForm(request.POST)
         form.save()
